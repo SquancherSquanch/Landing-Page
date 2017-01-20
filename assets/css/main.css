@@ -1,0 +1,235 @@
+/* Reset */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  line-height: 1;
+  height: 100%;
+  display: block; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* Grid */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Typography */
+h1, h3, h4, h5, p {
+  font-size: 12px;
+  margin-bottom: 22px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  height: 100%; }
+
+/* Header */
+#header {
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  /* Navbar */
+  /* Navbar Buttons */ }
+  #header .navbar {
+    background-color: #fff;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #111; }
+  #header .navbar-header {
+    margin-top: 23px; }
+  #header .navbar-header img {
+    padding: 7.5px;
+    height: auto; }
+  #header .navbar-header a {
+    font-size: 24px; }
+  #header .navbar-collapse {
+    padding: 0;
+    border: none; }
+  #header .nav {
+    margin: 0;
+    text-align: center; }
+  #header .navbar-toggle {
+    z-index: 35; }
+  #header .nav li {
+    padding: 0; }
+  #header .nav li > a {
+    padding: 38px 15px;
+    background: #fff; }
+  #header .nav li:last-child a {
+    background-color: #eceff1;
+    color: #78909c;
+    padding-right: 15em;
+    border-left: 2px solid #cfd8dc; }
+  #header .navbar-nav li a:hover {
+    color: #ffa000 !important;
+    border-bottom: 2px solid #ffa000;
+    margin-bottom: -2px; }
+  #header .navbar-nav > .active a {
+    color: #ffa000 !important;
+    border-bottom: 2px solid #ffa000;
+    margin-bottom: -2px; }
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: center;
+  background: #000 url(../../images/photo.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  min-height: 50%; }
+
+#banner h1 {
+  font-size: 40px;
+  text-shadow: 0 2px 2px rgba(38, 50, 56, 0.25);
+  margin: 0;
+  padding: 40px 0; }
+
+hr {
+  background-color: #fcc42e;
+  border: solid 1px #fcc42e;
+  height: 0;
+  width: 140px;
+  margin: 0 auto; }
+
+#banner p {
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  text-shadow: 0px 2px 2px rgba(38, 50, 56, 0.25);
+  padding: 40px 0;
+  margin: 0; }
+
+#button {
+  background-color: #fcc42e;
+  color: #ff6f00;
+  box-shadow: 0px 2px 0px 0px #ff6f00; }
+
+.glyphicon {
+  color: #fff;
+  font-size: 32px; }
+
+#left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+
+#right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+
+#left:before, #right:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%; }
+
+.left, .right {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* Main */
+#main {
+  position: relative;
+  min-height: 50%; }
+
+#main-container {
+  padding: 0;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+
+#main-container .row {
+  width: 100%;
+  margin: 0; }
+
+#main p {
+  font-size: 16px; }
+
+/* Footer */
+#container-inner {
+  min-height: calc(100% - 190px);
+  height: calc(100% - 190px); }
+
+#footer {
+  text-align: center;
+  font-size: 13px;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  background-color: #eceff1;
+  color: #78909c;
+  clear: both; }
+
+.copyright {
+  padding-top: 42.5px; }
+
+@media screen and (max-width: 1300px) {
+  .nav li > a {
+    padding: 38px 8px !important; }
+
+  .nav li:last-child a {
+    padding-right: 8px; } }
+@media screen and (max-width: 768px) {
+  #banner #button {
+    margin-bottom: 40px; }
+
+  #main-container {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
+@media screen and (max-height: 660px) {
+  #button {
+    margin-bottom: 60px; } }
+
+/*# sourceMappingURL=main.css.map */

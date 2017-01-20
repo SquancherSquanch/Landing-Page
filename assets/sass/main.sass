@@ -1,0 +1,283 @@
+// Sassy variables
+
+$txt-black: #263238
+
+$bg-grey: #eceff1
+
+$txt-grey: #78909c
+
+$bg-org: #fcc42e
+
+$txt-org: #ff6f00
+
+$active-org: #ffa000
+
+
+@mixin vertical-align-small($position:relative)
+	position: $position
+	top: 25%
+
+
+
+@mixin vertical-align($position:relative)
+	position: $position
+	top: 50%
+	-webkit-transform: translateY(-50%)
+	-ms-transform: translateY(-50%)
+	transform: translateY(-50%)
+
+/* Reset */
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+ol, ul
+	list-style: none
+
+html
+	height: 100%
+
+body
+	position: relative
+	line-height: 1
+	height: 100%
+	display: block
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif // <-- change this based on fonts
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+/* Grid */
+
+*,
+*:before,
+*:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+/* Typography */
+
+h1, h3, h4, h5, p
+	font-size: 12px
+	margin-bottom: 22px
+
+*
+	margin: 0
+	padding: 0
+
+html
+	height: 100%
+
+body
+	position: relative
+	height: 100%
+
+/* Header */
+
+#header
+	height: auto
+	margin: 0 auto
+	padding: 0
+	border: none
+ 
+
+	/* Navbar */
+	.navbar
+		background-color: #fff
+		margin: 0 
+		border: none 
+		border-radius: 0
+		border-bottom:  2px solid #111
+
+	.navbar-header
+		margin-top: 23px
+
+	.navbar-header img
+		padding: 7.5px 
+		height: auto
+
+	.navbar-header a
+		font-size: 24px
+
+	.navbar-collapse
+		padding: 0 
+		border: none
+
+	.nav
+		margin: 0
+		text-align: center
+
+	.navbar-toggle
+		z-index: 35
+
+	/* Navbar Buttons */
+	.nav li
+		padding: 0
+
+	.nav li > a
+		padding: 38px 15px
+		background: #fff
+
+	.nav li:last-child a
+		background-color: $bg-grey
+		color: #78909c
+		padding-right: 15em
+		border-left: 2px solid #cfd8dc
+
+	.navbar-nav li  a:hover
+		color: $active-org !important
+		border-bottom: 2px solid $active-org
+		margin-bottom: -2px
+
+	.navbar-nav>.active a
+		color: $active-org !important
+		border-bottom: 2px solid $active-org
+		margin-bottom: -2px
+
+
+/* Banner */
+
+#banner
+	position: relative
+	text-align: center
+	background: #000 url(../../images/photo.png) no-repeat center center
+	background-size: cover
+	color: #fff
+	min-height: 50%
+
+#banner h1
+	font-size: 40px
+	text-shadow: 0 2px 2px  rgba(38, 50, 56, 0.25)
+	margin: 0
+	padding: 40px 0
+
+hr
+	background-color: $bg-org
+	border: solid 1px $bg-org
+	height: 0
+	width: 140px
+	margin: 0 auto
+
+#banner p
+	font-size: 18px
+	font-family: "Myriad Pro"
+	text-shadow: 0px 2px 2px rgba(38, 50, 56, 0.25)
+	padding: 40px 0
+	margin: 0
+
+#button
+	background-color: $bg-org
+	color: $txt-org
+	box-shadow: 0px 2px 0px 0px $txt-org
+
+.glyphicon
+	color: #fff
+	font-size: 32px
+
+#left
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+
+#right
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+
+#left:before, #right:before 
+	content: ''
+	display: inline-block
+	vertical-align: middle
+	height: 100%
+
+.left, .right
+	display: inline-block
+	vertical-align: middle
+
+/* Main */
+#main
+	position: relative
+	min-height: 50%
+
+#main-container
+	padding: 0
+	padding-top: 64px
+	padding-bottom: 64px
+
+#main-container .row
+	width: 100%
+	margin: 0
+
+#main p
+	font-size: 16px
+
+/* Footer */
+#container-inner
+	min-height: calc(100% - 190px) // <--- Stretch it =D
+	height: calc(100% - 190px)
+
+#footer
+	text-align: center
+	font-size: 13px
+	height: 100px
+	width: 100%
+	bottom: 0
+	background-color: $bg-grey
+	color: $txt-grey
+	clear: both
+
+.copyright
+	padding-top: 42.5px
+
+@media screen and (max-width: 1300px)
+	.nav li > a
+		padding: 38px 8px !important
+
+	.nav li:last-child a
+		padding-right: 8px
+
+@media screen and (max-width: 768px)
+	#banner #button
+		margin-bottom: 40px
+
+	#main-container
+		padding-top: 40px
+		padding-bottom: 40px
+
+@media screen and (max-height: 660px)
+	#button
+		margin-bottom: 60px

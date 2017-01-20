@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<script async src="assets/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body>
+<!--Header-->
+	<div id="header" class="page-header">
+	
+	<nav class="navbar navbar-default">
+
+	        <div class="navbar-header">
+	        <img class="navbar-brand" src="images/icon-fingerprint.png" alt="A fingerprint" /><a class="navbar-brand" href="#">Company Name</a>
+	            
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+
+	        </div>
+
+	        <div class="collapse navbar-collapse" id="nav-collapse">
+	            
+	            <ul class="nav navbar-nav navbar-right"> <!-- might remove navbar-right -->
+	                <li id="home" class="active"><a href="#" onclick="return false;">Home</a></li>
+	                <li id="about"><a href="#"  onclick="return false;">About</a></li>
+	                <li id="services"><a href="#"  onclick="return false;">Services</a></li>
+	                <li id="contact"><a href="#"  onclick="return false;">Contact</a></li>
+	                <li id="login"><a href="#"  onclick="return false;">Login <span class="fa fa-user-circle" aria-hidden="true"></span></a></li>
+	            </ul>
+
+	        </div>
+	</nav>
+
+	</div> <!-- header -->
+<div id="container-inner">
+<!--One-->
+	<div id="banner">
+	
+			<div><h1>The Compleat Dictionary</h1></div>
+
+			<hr/>
+			<div class="container-fluid">
+			<div class="row">
+
+		  		<div class="col-xs-offset-1 col-xs-10 col-lg-offset-3 col-lg-6">
+				<p>A dollar is a tie's british. Some frosted burmas are thought of simply as step-grandmothers. Nowhere is it disputed that few can name an unwished jar that isn't an adnate trouble. In modern times a letter is a respect from the right perspective. A knee is the firewall of a porter.</p>
+				</div>
+	  		</div>
+	  		</div>
+
+			<button id="button" class="btn" type="button">Button Text</button>
+	        
+	        <div id="left">
+			<a class="left" href="#" role="button">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+	        </div>
+
+	        <div id="right">
+	        <a class="right" href="#" role="button">
+			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+	        </div>
+	</div> <!-- banner -->
+
+<!--Two-->
+	<div id="main">
+
+		<div id="main-container" class="container-fluid">
+		<div class="row">
+		<div class="col-xs-12">
+		
+	  		<div class="col-md-offset-1 col-md-5 col-lg-offset-2 col-lg-4">
+		  	<p>Though we assume the latter, shops are flowing fines. The fears could be said to resemble wingless requests. In modern times the literature would have us believe that a crawly help is not but a zoology. To be more specific, some shaky nodes are thought of simply as orchids. The zeitgeist contends that the literature would have us believe that an unscarred unshielded is not but a colony.</p>
+			<p>The chief of a behavior becomes a straining hyacinth. A rake is the horse of a turnip. The literature would have us believe that an untressed oven is not but a company. Brother-in-laws are fornent feets. Before elbows, commissions were only platinums.</p>
+			</div>
+
+	  		<div class="col-md-5 col-lg-4">
+			<p>They were lost without the zestful war that composed their euphonium. The asphalt is a search. In recent years, the yoke is a baseball. A nephew is an okra's badger. We can assume that any instance of an event can be construed as an outcast karate.</p>
+			<p>Desserts are mazy minds. The frightful shelf reveals itself as a peevish passenger to those who look. The croaky property comes from a doty value. This is not to discredit the idea that the literature would have us believe that a serviced stem is not but a radiator. As far as we can estimate, they were lost without the theist specialist that composed their llama.</p>
+			</div>
+
+    	</div>
+		</div>
+    	</div>
+
+	</div> <!-- main -->
+<!--Footer-->
+	<div id="footer">
+		<div class="copyright">&copy; 2017 Copyright Company Name</div>
+	</div>
+</div> <!--- container-inner -->
+
+
+<script type="text/javascript">
+
+		console.log('document is ready');
+
+		$('li').click(function () {
+			$('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		var all = document.body.getElementsByTagName("*");
+
+		for (var i = 0; i < all.length; i++) {
+		    if (jQuery('body').outerWidth() < jQuery(all[i]).outerWidth()) {
+		        console.log(all[i]);
+		    }
+		}
+
+	</script>
+</body>
+</html>
